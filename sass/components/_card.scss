@@ -1,0 +1,81 @@
+.card {
+    outline: none;
+    flex-grow: 1;
+    width: 220px;
+    height: 400px;
+    max-width: 300px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    isolation: isolate;
+    color: #fcfdfe;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .2), 0 0 3px rgba(0, 0, 0, .4);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+
+    &:hover, &:focus {
+        -moz-transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03);
+        transform-origin: bottom;
+        box-shadow: 0px 7px 8px 4px rgba(0, 0, 0, .05), 0 3px 3px rgba(0, 0, 0, .01);
+    }
+    &__image {
+        transition: all .2s;
+        height: 200px;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 170px, 0 200px);
+                clip-path: polygon(0 0, 100% 0, 100% 170px, 0 200px);
+        background-size: cover;
+        background-position: center;
+    }
+    &:hover &__image {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 200px, 0 200px);
+                clip-path: polygon(0 0, 100% 0, 100% 200px, 0 200px);
+        /*transform: scale(1.1) rotate(-2deg);*/
+        transition-delay: 0s;
+    }
+    &__content {
+        padding: 3em 1em 1em;
+        height: 230px;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        transition: all .2s;
+        background-image: linear-gradient( to top, #1D3557, #A8DADC);
+    }
+    &:hover &__content {
+        padding-top: 4em;
+    }
+    @media (min-width: 1024px){
+        & {
+            min-width: 230px;
+        }
+    }
+    @media (min-width: 1280px){
+        & {
+            min-width: 240px;
+        }
+    }
+    @media (min-width: 426px) and (max-width:768px){
+        & {
+            height: 200px;
+            min-width: 100%;
+        }
+        &__article {
+            display: flex;
+        }
+        &__image{
+            width: 40%;
+            -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+                    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+        }
+        &__content{
+            top: 0;
+            padding-left: 45%;
+            width: 100%;
+        }
+    }
+}
