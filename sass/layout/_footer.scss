@@ -1,0 +1,93 @@
+/******************************
+            FOOTER
+*******************************/
+
+.footer-body {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+}
+
+.section-my-brand {
+    width: 20%;
+}
+
+.section-my-brand__logo {
+    align-self: center;
+    text-align: center;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5em;
+}
+
+.section-my-brand__text p {
+    text-align: left;
+    padding-bottom: 1em;
+}
+
+.section-my-brand__payments {
+    text-align: center;
+    font-size: 2.3em;
+}
+
+.section-footer-categories {
+    padding: 1em;
+}
+
+.footer-categories h3 {
+    padding-bottom: 1em;
+}
+
+.footer-categories__item {
+    padding-bottom: 0.5em;
+    list-style-type: none;
+}
+
+.footer-categories__item a {
+    text-decoration: none;
+    color: #2e2d2d;
+}
+
+.section-contact-info {
+    padding: 1em;
+}
+
+.contact-info h3 {
+    padding-bottom: 1em;
+}
+
+.contact-info__item {
+    padding-bottom: 0.5em;
+    list-style-type: none;
+}
+
+.footer-support {
+    background-color: #FCA311;
+    padding: 2.5em;
+    border-radius: 10px;
+}
+
+.footer-support__icon {
+    color: #2e2d2d;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.footer-support__text {
+    color: #2e2d2d;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 0.7em;
+}
+
+.footer-support__text span {
+    display: block;
+    padding-bottom: 0.8em;
+}
+
+.footer-support__tel {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}

@@ -1,0 +1,27 @@
+/******************************
+            MAIN BODY
+*******************************/
+
+.upload-products {
+    padding: 5em;
+    text-align: center;
+    background-color: #E5E5E5;
+}
+
+.upload-products__form {
+    padding-top: 1.5em;
+    line-height: 2em;
+}
+
+.row-form label {
+    display: block;
+}
+
+.row-form input {
+    width: 20%;
+    padding: 1em;
+}
+
+#envio {
+    margin-bottom: 2em;
+}

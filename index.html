@@ -5,309 +5,564 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header class="main-header">
         <input type="checkbox" id="menu">
-        <nav class="nav-bar">
-            <ul class="nav-bar__nav-list">
-                <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
-                </li>
-                <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
-                </li>
-                <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
-                </li>
-            </ul>
-        </nav>
         <div class="search-bar">
-            <div class="search-bar__logo-container">
-                Logo
+            <a 
+                class="search-bar__logo-container" 
+                style="background-image: url('img/logo/logo-connecticus.png');"
+                href="index.html"
+            >
+            </a>
+            <div class="search-bar__carrito-container">
+                &#xf07a
             </div>
             <form class="search-bar__form-container">
-                <label class="search-bar__form-label" for="busqueda">Buscar</label>
-                <input class="search-bar__form-search" id="busqueda" type="search">
-                <input class="search-bar__form-submit" type="submit" value="Buscar">
+                <label class="search-bar__form-label" for="busqueda"></label>
+                <input class="search-bar__form-submit" type="submit" value="&#xf002">
+                <input class="search-bar__form-search" id="busqueda" type="search" placeholder="Buscar productos, marcas y más...">
             </form>
-            <div class="search-bar__carrito-container">
-                C
+            <div class="search-bar__contact-container">
+                <div class="search-bar__contact-icon">
+                    &#xf590
+                </div>
+                <div class="search-bar__contact-text">
+                    (011) 1234-5678
+                    mymail@mailservice.com
+                </div>
             </div>
             <div class="menu-toggle">
                 <label class="menu-toggle__label" for="menu">
-                    <span class="menu-toggle__pan-arriba"></span>
-                    <span class="menu-toggle__medallon"></span>
-                    <span class="menu-toggle__pan-abajo"></span>
+                    <span class="menu-toggle__icon1">&#xf0c9</span>
+                    <span class="menu-toggle__icon2">&#xf00d</span>
                 </label>
             </div>
         </div>
+        <nav class="nav-bar">
+            <div class="nav-bar__espacio-container"></div>
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html"><span class="nav-bar__nav-link-icon">&#xf015</span> Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html"><span class="nav-bar__nav-link-icon">&#xf093</span> Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html"><span class="nav-bar__nav-link-icon">&#xf2b9</span> Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html"><span class="nav-bar__nav-link-icon">&#xf0c0</span> Nosotros</a>
+                </li>
+            </ul>
+            <ul class="nav-bar__nav-social">
+                <li class="nav-bar__nav-social-item" id="nav-social-item-hearder">Síguenos</li>
+                <li class="nav-bar__nav-social-item">
+                    <a href="https://web.whatsapp.com/send?phone=011-1234-5678" target="_blank" class="nav-social-icon"><i class="fab fa-whatsapp"></i></a>
+                </li>
+                <li class="nav-bar__nav-social-item">
+                    <a href="https://facebook.com/" target="_blank" class="nav-social-icon"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="nav-bar__nav-social-item">
+                    <a href="http://instagram.com/" target="_blank" class="nav-social-icon"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-bar__nav-social-item">
+                    <a href="http://twitter.com/" target="_blank" class="nav-social-icon"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+            <div class="nav-bar__carrito-container">
+                &#xf07a
+            </div>
+        </nav>
     </header>
-    <main>
+    <main class="main-body">
+        <section class="section-offers">
+            <div class="principal-offer__container">
+                <article class="principal-offer">
+                    <div class="principal-offer__description">
+                        <p>Super Venta. Solo online!</p>
+                        <p id="offer-quality">20% OFF</p>
+                    </div>
+                    <div class="principal-offer__brand-logo">
+                    </div>
+                    <div class="principal-offer__small-letter">
+                        ***Todos los productos, todas las marcas. ¡Disponible solo por hoy!***
+                    </div>
+                </article>
+            </div>
+            <div class="secundary-offer__container">
+                <div class="secundary-offer">
+                    <article class="secundary-offer__article">
+                        <div 
+                        class="secundary-offer-1__image"
+                        style="background-image: url('img/otros/Phones+and+Tablet-removebg-preview.png');"
+                        >
+                        </div>
+                        <div class="secundary-offer-1__content">
+                            <div class="secundary-offer-1__title">
+                                CELULARES Y TABLETS
+                            </div>
+                            <div class="secundary-offer-1__description"> 
+                                HASTA 25% OFF Y 18X SIN INTERÉS
+                            </div>
+                            <a class="secundary-offer-1__buttom" href="#">Ver más</a> 
+                        </div>
+                    </article>
+                </div>
+                <div class="secundary-offer">
+                    <article class="secundary-offer__article">
+                        <div 
+                        class="secundary-offer-2__image"
+                        style="background-image: url('img/productos/drone-1-removebg-preview.png');"
+                        >
+                        </div>
+                        <div class="secundary-offer-2__content">
+                            <div class="secundary-offer-2__title">
+                                ESPECIAL DE DRONES
+                            </div>
+                            <div class="secundary-offer-2__description"> 
+                                HASTA 15% OFF Y 12X SIN INTERÉS
+                            </div>
+                            <a class="secundary-offer-2__buttom" href="#">Ver más</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="site-shopping-info">
+            <div class="info-slide">
+                <div class="info-side__icon-container"><i class="fas fa-shipping-fast"></i></div>
+                <div class="info-side__content-container">
+                    <header class="info-side__content-header">Envios Gratis</header>
+                    <p header class="info-side__content-description">Para ordenes sobre los $100</p>
+                </div>
+            </div>
+            <div class="info-slide">
+                <div class="info-side__icon-container"><i class="fas fa-hand-holding-usd"></i></div>
+                <div class="info-side__content-container">
+                    <header class="info-side__content-header">Devolución de dinero</header>
+                    <p header class="info-side__content-description">Reembolso del 100% garantizado</p>
+                </div>
+            </div>
+            <div class="info-slide">
+                <div class="info-side__icon-container"><i class="fas fa-headset"></i></div>
+                <div class="info-side__content-container">
+                    <header class="info-side__content-header">Soporte 24/7</header>
+                    <p header class="info-side__content-description">(011) 1234-5678</p>
+                </div>
+            </div>
+            <div class="info-slide">
+                <div class="info-side__icon-container"><i class="fas fa-lock"></i></div>
+                <div class="info-side__content-container">
+                    <header class="info-side__content-header">Pago Seguro</header>
+                    <p header class="info-side__content-description">Pagos online seguros
+                    </p>
+                </div>
+            </div>
+        </section>
         <section class="section-cards">
             <header class="section-cards__header">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-                <p>Se encontraron X productos</p>
+                <h1 class="section-cards__heading">Nuestros más vendidos</h1>
             </header>
             <div class="cards-container">
                 <a class="card" href="#">
+                    <div class="card__like">
+                        <i class="far fa-heart"></i>
+                    </div>
                     <article class="card__article">
                         <div 
                             class="card__image" 
-                            style="background-image: url('../img/productos/notebook-lenovo.jpg')">
+                            style="background-image: url('img/productos/digital-camera-1.jpg')">
                         </div>
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Camara Digital</h3>
                             <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>  
-                        </div>
-                    </article>
-                </a>
-                <a class="card" href="#">
-                    <article class="card__article">
-                        <div 
-                        class="card__image" 
-                        style="background-image: url('../img/productos/apple-iphone-11-pro-max.jpg')"
-                        >
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
-                            <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="card__arrow-icon">
+                                &#xf061
                             </div>
                         </div>
                     </article>
                 </a>
                 <a class="card" href="#">
+                    <div class="card__like">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <article class="card__article">
+                        <div 
+                        class="card__image" 
+                        style="background-image: url('img/productos/drone-1.jpg')"
+                        >
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__heading">Drone</h3>
+                            <div class="card__description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="card__arrow-icon">
+                                &#xf061
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__like">
+                        <i class="far fa-heart"></i>
+                    </div>
                     <article class="card__article">
                         <div class="card__image" 
-                        style="background-image: url('../img/productos/camara-canon.jpg')"
+                        style="background-image: url('img/productos/headphones-1.jpg')"
                         >
                         </div>
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Auriculares</h3>
                             <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="card__arrow-icon">
+                                &#xf061
                             </div>
                         </div>
                     </article>
                 </a>
                 <a class="card" href="#">
+                    <div class="card__like">
+                        <i class="far fa-heart"></i>
+                    </div>
                     <article class="card__article">
                         <div class="card__image" 
-                        style="background-image: url('../img/productos/auriculares-sony.jpg')"
+                        style="background-image: url('img/productos/ipad-1.jpg')"
                         >
                         </div>
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Ipad</h3>
                             <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="card__arrow-icon">
+                                &#xf061
                             </div>
                         </div>
                     </article>
                 </a>
                 <a class="card" href="#">
+                    <div class="card__like">
+                        <i class="far fa-heart"></i>
+                    </div>
                     <article class="card__article">
-                        <div class="card__image" style="background-image: url('../img/productos/parlante-jbl.jpg')"
+                        <div class="card__image" style="background-image: url('img/productos/iphone-1.jpg')"
                         >
                         </div>
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Iphone 12x</h3>
                             <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>  
+                            </div>
+                            <div class="card__arrow-icon">
+                                &#xf061
+                            </div>
                         </div>
                     </article>
                 </a>
                 <a class="card" href="#">
+                    <div class="card__like">
+                        <i class="far fa-heart"></i>
+                    </div>
                     <article class="card__article">
                         <div class="card__image" 
-                        style="background-image: url('../img/productos/google-nest-mini.jpg')"
+                        style="background-image: url('img/productos/macbook-pro-1.jpg')"
                         >
                         </div>
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Macbook Pro</h3>
                             <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>  
-                        </div>
-                    </article>
-                </a>
-                <a class="card" href="#">
-                    <article class="card__article">
-                        <div 
-                        class="card__image" 
-                        style="background-image: url('../img/productos/samsung-galaxy-s21-plus-5g.jpg')"
-                        >
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
-                            <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>  
-                        </div>
-                    </article>
-                </a>
-                <a class="card" href="#">
-                    <article class="card__article">
-                        <div 
-                        class="card__image" 
-                        style="background-image: url('../img/productos/drone-dji.jpg')"
-                        >
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
-                            <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>  
-                        </div>
-                    </article>
-                </a>
-                <a class="card" href="#">
-                    <article class="card__article">
-                        <div class="container-flip">
-                            <div 
-                            class="card__image" 
-                            style="background-image: url('../img/productos/dji-mavic-2-pro.jpg')"
-                            >
-                            </div>
-                            <div class="card__content">
-                                <h3 class="card__heading">Título</h3>
-                                <div class="card__description">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>  
+                            </div> 
+                            <div class="card__arrow-icon">
+                                &#xf061
                             </div>
                         </div>
                     </article>
                 </a>
                 <a class="card" href="#">
+                    <div class="card__like">
+                        <i class="far fa-heart"></i>
+                    </div>
                     <article class="card__article">
-                            <div 
-                            class="card__image" 
-                            style="background-image: url('../img/productos/apple-iphone-12.jpg')"
-                            >
+                        <div 
+                        class="card__image" 
+                        style="background-image: url('img/productos/minimalist-speaker-1.jpg')"
+                        >
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__heading">Speaker inteligente</h3>
+                            <div class="card__description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>  
+                            <div class="card__arrow-icon">
+                                &#xf061
                             </div>
-                            <div class="card__content">
-                                <h3 class="card__heading">Título</h3>
-                                <div class="card__description">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>  
+                        </div>
+                    </article>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__like">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <article class="card__article">
+                        <div 
+                        class="card__image" 
+                        style="background-image: url('img/productos/ps-controller-1.jpg')"
+                        >
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__heading">PS Joystick</h3>
+                            <div class="card__description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>  
+                            <div class="card__arrow-icon">
+                                &#xf061
                             </div>
-                    </article>
-                </a>
-                <a class="card" href="#">
-                    <article class="card__article">
-                        <div 
-                        class="card__image" 
-                        style="background-image: url('../img/productos/celular-samsung.jpg')"
-                        >
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
-                            <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>  
                         </div>
                     </article>
                 </a>
                 <a class="card" href="#">
+                    <div class="card__like">
+                        <i class="far fa-heart"></i>
+                    </div>
                     <article class="card__article">
                         <div 
                         class="card__image" 
-                        style="background-image: url('../img/productos/chromecast-google.jpg')"
+                        style="background-image: url('img/productos/smart-watch-1.jpg')"
                         >
                         </div>
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Smart Watch</h3>
                             <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>  
+                            <div class="card__arrow-icon">
+                                &#xf061
+                            </div>
                         </div>
                     </article>
                 </a>
                 <a class="card" href="#">
+                    <div class="card__like">
+                        <i class="far fa-heart"></i>
+                    </div>
                     <article class="card__article">
                         <div 
                         class="card__image" 
-                        style="background-image: url('../img/productos/lavarropas-dh.jpg')"
+                        style="background-image: url('img/productos/tv-1.jpg')"
                         >
                         </div>
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">TV</h3>
                             <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>  
+                            <div class="card__arrow-icon">
+                                &#xf061
+                            </div>
                         </div>
                     </article>
                 </a>
                 <a class="card" href="#">
+                    <div class="card__like">
+                        <i class="far fa-heart"></i>
+                    </div>
                     <article class="card__article">
                         <div 
                         class="card__image" 
-                        style="background-image: url('../img/productos/modem-motorola.jpg')"
+                        style="background-image: url('img/productos/virtual-reality-glasses-1.jpg')"
                         >
                         </div>
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Lentes VR</h3>
                             <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>  
+                            </div> 
+                            <div class="card__arrow-icon">
+                                &#xf061
+                            </div> 
                         </div>
                     </article>
                 </a>
                 <a class="card" href="#">
+                    <div class="card__like">
+                        <i class="far fa-heart"></i>
+                    </div>
                     <article class="card__article">
                         <div 
                         class="card__image" 
-                        style="background-image: url('../img/productos/motorola-moto-e7.jpg')"
+                        style="background-image: url('img/productos/zoom-camera-1.jpg')"
                         >
                         </div>
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Camara Zoom</h3>
                             <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>  
-                        </div>
-                    </article>
-                </a>
-                <a class="card" href="#">
-                    <article class="card__article">
-                        <div 
-                        class="card__image" 
-                        style="background-image: url('../img/productos/samsung-tu7000.jpg')"
-                        >
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
-                            <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>  
-                        </div>
-                    </article>
-                </a>
-                <a class="card" href="#">
-                    <article class="card__article">
-                        <div 
-                        class="card__image" 
-                        style="background-image: url('../img/productos/sony-playstation-5.jpg')"
-                        >
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
-                            <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>  
+                            <div class="card__arrow-icon">
+                                &#xf061
+                            </div>
                         </div>
                     </article>
                 </a>
             </div>
         </section>
+        <section class="section-categories">
+            <input type="radio" id="cyt" name="categories" value="cyt" checked>
+            <input type="radio" id="c" name="categories" value="c">
+            <input type="radio" id="dyr" name="categories" value="dyr">
+            <input type="radio" id="cyd" name="categories" value="cyd">
+            <input type="radio" id="vj" name="categories" value="vj">
+            <input type="radio" id="sya" name="categories" value="sya">
+            <nav class="nav-categories">
+                <ul class="nav-categories__nav-list">
+                    <li class="nav-categories__nav-item">
+                        <label class="nav-categories__nav-label" for="cyt">Celulares y Tablets</label>
+                    </li>
+                    <li class="nav-categories__nav-item">
+                        <label class="nav-categories__nav-label" for="c">Computadoras</label>
+                    </li>
+                    <li class="nav-categories__nav-item">
+                        <label class="nav-categories__nav-label" for="dyr">Deporte y recreación</label>
+                    </li>
+                    <li class="nav-categories__nav-item">
+                        <label class="nav-categories__nav-label" for="cyd">Camaras y Drones</label>
+                    </li>
+                    <li class="nav-categories__nav-item">
+                        <label class="nav-categories__nav-label" for="vj">Videojuegos</label>
+                    </li>
+                    <li class="nav-categories__nav-item">
+                        <label class="nav-categories__nav-label" for="sya">Spearkers y Audio</label>
+                    </li>
+                </ul>
+            </nav>
+            <div class="layout-categories__cyt">
+                <div class="layout-categories__cyt-image" style="background-image: url('img/otros/Phones+and+Tablet-removebg-preview.png');"></div>
+                <div class="layout-categories__cyt-content">
+                    <header class="layout-categories__content_header">Celulares y Tablets</header>
+                    <div class="layout-categories__content_description">Empiece la fiesta con excelentes dispositivos electrónicos. Encontrarás auriculares resistentes al agua, los últimos videojuegos, relojes inteligentes de alta calidad y mucho más. Todos nuestros productos tienen garantía de calidad, precio y autenticidad. También vienen con garantía de satisfacción.
+                    </div>
+                    <a class="layout-categories__content_buttom" href="#">Ver categoría</a>
+                </div>
+            </div>
+            <div class="layout-categories__c">
+                <div class="layout-categories__c-image" style="background-image: url('img/otros/Computers-removebg-preview.png');"></div>
+                <div class="layout-categories__c-content">
+                    <header class="layout-categories__content_header">Computadoras</header>
+                    <div class="layout-categories__content_description">Empiece la fiesta con excelentes dispositivos electrónicos. Encontrarás auriculares resistentes al agua, los últimos videojuegos, relojes inteligentes de alta calidad y mucho más. Todos nuestros productos tienen garantía de calidad, precio y autenticidad. También vienen con garantía de satisfacción.
+                    </div>
+                    <a class="layout-categories__content_buttom" href="#">Ver categoría</a>
+                </div>
+            </div>
+            <div class="layout-categories__dyr">
+                <div class="layout-categories__dyr-image" style="background-image: url('img/otros/Technology2-removebg-preview.png');"></div>
+                <div class="layout-categories__dyr-content">
+                    <header class="layout-categories__content_header">Deporte y Recreación</header>
+                    <div class="layout-categories__content_description">Empiece la fiesta con excelentes dispositivos electrónicos. Encontrarás auriculares resistentes al agua, los últimos videojuegos, relojes inteligentes de alta calidad y mucho más. Todos nuestros productos tienen garantía de calidad, precio y autenticidad. También vienen con garantía de satisfacción.
+                    </div>
+                    <a class="layout-categories__content_buttom" href="#">Ver categoría</a>
+                </div>
+            </div>
+            <div class="layout-categories__cyd">
+                <div class="layout-categories__cyd-image" style="background-image: url('img/productos/digital-camera-2-removebg-preview.png');"></div>
+                <div class="layout-categories__cyd-content">
+                    <header class="layout-categories__content_header">Camaras y Drones</header>
+                    <div class="layout-categories__content_description">Empiece la fiesta con excelentes dispositivos electrónicos. Encontrarás auriculares resistentes al agua, los últimos videojuegos, relojes inteligentes de alta calidad y mucho más. Todos nuestros productos tienen garantía de calidad, precio y autenticidad. También vienen con garantía de satisfacción.
+                    </div>
+                    <a class="layout-categories__content_buttom" href="#">Ver categoría</a>
+                </div>
+            </div>
+            <div class="layout-categories__vj">
+                <div class="layout-categories__vj-image" style="background-image: url('img/productos/ps-controller-1-removebg-preview.png');"></div>
+                <div class="layout-categories__vj-content">
+                    <header class="layout-categories__content_header">Video Juegos</header>
+                    <div class="layout-categories__content_description">Empiece la fiesta con excelentes dispositivos electrónicos. Encontrarás auriculares resistentes al agua, los últimos videojuegos, relojes inteligentes de alta calidad y mucho más. Todos nuestros productos tienen garantía de calidad, precio y autenticidad. También vienen con garantía de satisfacción.
+                    </div>
+                    <a class="layout-categories__content_buttom" href="#">Ver categoría</a>
+                </div>
+            </div>
+            <div class="layout-categories__sya">
+                <div class="layout-categories__sya-image" style="background-image: url('img/productos/minimalist-speaker-2-removebg-preview.png');"></div>
+                <div class="layout-categories__sya-content">
+                    <header class="layout-categories__content_header">Speakers y Audio</header>
+                    <div class="layout-categories__content_description">Empiece la fiesta con excelentes dispositivos electrónicos. Encontrarás auriculares resistentes al agua, los últimos videojuegos, relojes inteligentes de alta calidad y mucho más. Todos nuestros productos tienen garantía de calidad, precio y autenticidad. También vienen con garantía de satisfacción.
+                    </div>
+                    <a class="layout-categories__content_buttom" href="#">Ver categoría</a>
+                </div>
+            </div>
+        </section>
+        <section class="section-brands">
+            <div class="brands" style="background-image: url(img/otros/hp.png);"></div>
+            <div class="brands" style="background-image: url(img/otros/samsung.png);"></div>
+            <div class="brands" style="background-image: url(img/otros/sony.png);"></div>
+            <div class="brands" style="background-image: url(img/otros/beats.png);"></div>
+            <div class="brands" style="background-image: url(img/otros/philips.png);"></div>
+        </section>
+        <section class="section-contact">
+            <div class="section-contact__title">
+                Suscríbete a nuestro <span>boletín</span>
+            </div>
+            <form class="section-contact__subscribe" action="subscribe.php">
+                <input class="field-subscribe" type="email" id="usuario" name="usuario" placeholder="Dirección de e-mail">
+                <input class="buttom-subscribe" type="submit" value="Suscribir">
+            </form>
+            <div class="section-contact__social-icons">
+                <a href="https://web.whatsapp.com/send?phone=011-1234-5678" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="http://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="http://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="footer-body">
+        <section class="section-my-brand">
+            <div class="section-my-brand__logo" style="background-image: url(img/logo/logo-connecticus.png);"></div>
+            <div class="section-my-brand__text">
+                <p>Vendemos productos digitales de alta calidad de todo tipo y enviamos a todos los rincones del mundo.</p>
+            </div>
+            <div class="section-my-brand__payments">
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-amex"></i>
+            </div>
+        </section>
+        <section class="section-footer-categories">
+            <ul class="footer-categories">
+                <h3>Categorías</h3>
+                <li class="footer-categories__item"><a href="#"> Celulares y Tablets</a></li>
+                <li class="footer-categories__item"><a href="#">Computadoras</a></li>
+                <li class="footer-categories__item"><a href="#">Deporte y recreación</a></li>
+                <li class="footer-categories__item"><a href="#">Camaras y Drones</a></li>
+                <li class="footer-categories__item"><a href="#">Videojuegos</a></li>
+                <li class="footer-categories__item"><a href="#">Speakers y Audio</a></li>
+            </ul>
+        </section>
+        <section class="section-contact-info">
+            <ul class="contact-info">
+                <h3>Info y Contacto</h3>
+                <li class="contact-info__item">(011) 1234-5678</li>
+                <li class="contact-info__item">email@mailservice.com</li>
+                <li class="contact-info__item">Buenos Aires</li>
+                <li class="contact-info__item">B1650, Argentina</li>
+            </ul>
+        </section>
+        <section class="section-support">
+            <div class="footer-support">
+                <div class="footer-support__icon"><i class="fas fa-headset"></i></div>
+                <div class="footer-support__text">SERVICIO AL CLIENTE <span>Abierto 24/7</span></div>
+                <div class="footer-support__tel">(011) 1234-5678</div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="main-header">
+        <input type="checkbox" id="menu">
+        <div class="search-bar">
+            <a 
+                class="search-bar__logo-container" 
+                style="background-image: url('img/logo/logo-connecticus.png');"
+                href="index.html"
+            >
+            </a>
+            <div class="search-bar__carrito-container">
+                &#xf07a
+            </div>
+            <form class="search-bar__form-container">
+                <label class="search-bar__form-label" for="busqueda"></label>
+                <input class="search-bar__form-submit" type="submit" value="&#xf002">
+                <input class="search-bar__form-search" id="busqueda" type="search" placeholder="Buscar productos, marcas y más...">
+            </form>
+            <div class="search-bar__contact-container">
+                <div class="search-bar__contact-icon">
+                    &#xf590
+                </div>
+                <div class="search-bar__contact-text">
+                    (011) 1234-5678
+                    mymail@mailservice.com
+                </div>
+            </div>
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__icon1">&#xf0c9</span>
+                    <span class="menu-toggle__icon2">&#xf00d</span>
+                </label>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <div class="nav-bar__espacio-container"></div>
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html"><span class="nav-bar__nav-link-icon">&#xf015</span> Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html"><span class="nav-bar__nav-link-icon">&#xf093</span> Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html"><span class="nav-bar__nav-link-icon">&#xf2b9</span> Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html"><span class="nav-bar__nav-link-icon">&#xf0c0</span> Nosotros</a>
+                </li>
+            </ul>
+            <ul class="nav-bar__nav-social">
+                <li class="nav-bar__nav-social-item" id="nav-social-item-hearder">Síguenos</li>
+                <li class="nav-bar__nav-social-item">
+                    <a href="https://web.whatsapp.com/send?phone=011-1234-5678" target="_blank" class="nav-social-icon"><i class="fab fa-whatsapp"></i></a>
+                </li>
+                <li class="nav-bar__nav-social-item">
+                    <a href="https://facebook.com/" target="_blank" class="nav-social-icon"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="nav-bar__nav-social-item">
+                    <a href="http://instagram.com/" target="_blank" class="nav-social-icon"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-bar__nav-social-item">
+                    <a href="http://twitter.com/" target="_blank" class="nav-social-icon"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+            <div class="nav-bar__carrito-container">
+                &#xf07a
+            </div>
+        </nav>
+    </header>
+    <main class="main-body">
+        <section class="section-principal-contact">
+            <form class="form-contact" action="contacto.php">
+                <div class="form-contact__logo"><img src="img/logo/logo-connecticus.png" alt="logo-connecticus"></div>
+                <h1 class="form-contact__header">Adelante, te escuchamos.</h1>
+                <div class="form-contact__input-text-container">
+                    <div class="form-contact__input-text">
+                        <label for="nombre">Nombre completo</label>
+                        <input id="nombre" name="nombre" required  minlength="3" maxlength="20">
+                    </div>
+                    <div class="form-contact__input-text">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-contact__input-text">
+                        <label for="tel">Telefono</label>
+                        <input type="tel" id="tel" name="tel" required>
+                    </div>
+                    <div class="form-contact__input-text">
+                        <label for="area-int">Area de interes</label>
+                        <input id="area-int" name="email" required>
+                    </div>
+                </div>
+                <div class="form-contact__textarea">
+                    <label for="help">¿Cómo podemos ayudarte?</label>
+                    <textarea id="help" name="help" required></textarea>
+                </div>
+                <div class="form-contact__input-submit">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+        <section class="section-contact">
+            <div class="section-contact__title">
+                Suscríbete a nuestro <span>boletín</span>
+            </div>
+            <form class="section-contact__subscribe" action="subscribe.php">
+                <input class="field-subscribe" type="email" id="usuario" name="usuario" placeholder="Dirección de e-mail">
+                <input class="buttom-subscribe" type="submit" value="Suscribir">
+            </form>
+            <div class="section-contact__social-icons">
+                <a href="https://web.whatsapp.com/send?phone=011-1234-5678" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="http://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="http://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-body">
+        <section class="section-my-brand">
+            <div class="section-my-brand__logo" style="background-image: url(img/logo/logo-connecticus.png);"></div>
+            <div class="section-my-brand__text">
+                <p>Vendemos productos digitales de alta calidad de todo tipo y enviamos a todos los rincones del mundo.</p>
+            </div>
+            <div class="section-my-brand__payments">
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-amex"></i>
+            </div>
+        </section>
+        <section class="section-footer-categories">
+            <ul class="footer-categories">
+                <h3>Categorías</h3>
+                <li class="footer-categories__item"><a href="#"> Celulares y Tablets</a></li>
+                <li class="footer-categories__item"><a href="#">Computadoras</a></li>
+                <li class="footer-categories__item"><a href="#">Deporte y recreación</a></li>
+                <li class="footer-categories__item"><a href="#">Camaras y Drones</a></li>
+                <li class="footer-categories__item"><a href="#">Videojuegos</a></li>
+                <li class="footer-categories__item"><a href="#">Speakers y Audio</a></li>
+            </ul>
+        </section>
+        <section class="section-contact-info">
+            <ul class="contact-info">
+                <h3>Info y Contacto</h3>
+                <li class="contact-info__item">(011) 1234-5678</li>
+                <li class="contact-info__item">email@mailservice.com</li>
+                <li class="contact-info__item">Buenos Aires</li>
+                <li class="contact-info__item">B1650, Argentina</li>
+            </ul>
+        </section>
+        <section class="section-support">
+            <div class="footer-support">
+                <div class="footer-support__icon"><i class="fas fa-headset"></i></div>
+                <div class="footer-support__text">SERVICIO AL CLIENTE <span>Abierto 24/7</span></div>
+                <div class="footer-support__tel">(011) 1234-5678</div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

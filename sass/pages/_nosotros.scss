@@ -1,0 +1,234 @@
+/******************************
+            MAIN BODY
+*******************************/
+
+/******************************
+        PRINCIPAL SECTION
+*******************************/
+
+.princiapl-section {
+    padding: 4em;
+}
+
+.principal-section__content {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.principal-section__content h1 {
+    font-size: 2.5em;
+}
+
+.principal-section__content p {
+    font-size: 1.05em;
+    padding-top: 2em;
+    line-height: 1.7em;
+}
+
+.principal-section__images {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    padding-top: 3em;
+}
+
+.principal-section__image-container {
+    height: 420px;
+    width: 100%;
+    
+}
+
+.principal-section__image {
+    height: 420px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.principal-section__image:hover {
+    transform: scale(1.02);
+    transition: all 0.2s;
+}
+
+/******************************
+        VISION SECTION
+*******************************/
+
+.vision-section {
+    display: flex;
+    height: 500px;
+    background-color: #E5E5E5;
+}
+
+.vision-section__brand-logo {
+    display: flex;
+    opacity: 0.5;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+}
+
+.vision-section__logo {
+    align-self: center;
+    padding: 2em;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    min-height: 50%;
+    max-height: inherit;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vision-section__content {
+    align-self: center;
+    width: 50%;
+    padding: 6em;
+}
+
+.vision, .promise {
+    width: 60%;
+    line-height: 1.4em;
+}
+
+.vision {
+    padding-bottom: 2em;
+}
+
+.vision h1, .promise h1 {
+    padding-bottom: 1em;
+}
+
+/******************************
+    SECTION CONFIDENCE
+*******************************/
+
+.section-confidence {
+    padding: 8em;
+}
+
+.section-confidence__header {
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.section-confidence__content {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.section-confidence__content1 {
+    width: 30%;
+}
+
+.section-confidence__content1 i {
+    color: #FCA311;
+    font-size: 3em;
+    padding-bottom: 0.5em;
+}
+
+.section-confidence__content1 h3 {
+    font-size: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.section-confidence__content2 {
+    width: 30%;
+}
+
+.section-confidence__content2 i {
+    color: #FCA311;
+    font-size: 3em;
+    padding-bottom: 0.5em;
+}
+
+.section-confidence__content2 h3 {
+    font-size: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.section-confidence__content3 {
+    width: 30%;
+}
+
+.section-confidence__content3 i {
+    color: #FCA311;
+    font-size: 3em;
+    padding-bottom: 0.5em;
+}
+
+.section-confidence__content3 h3 {
+    font-size: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/******************************
+        SECTION STATISTICS
+*******************************/
+
+.section-statistics {
+    height: 400px;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-statistics__content {
+    display: flex;
+    color: #fff;
+    text-align: center;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-top: 10em;
+}
+
+.section-statistics__data1 {
+    font-size: 2em;
+    color: #FCA311;
+}
+
+.section-statistics__data1 p {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.section-statistics__data2 {
+    font-size: 2em;
+    color: #FCA311;
+}
+
+.section-statistics__data2 p {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.section-statistics__data3 {
+    font-size: 2em;
+    color: #FCA311;
+}
+
+.section-statistics__data3 p {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.section-statistics__data4 {
+    font-size: 2em;
+    color: #FCA311;
+}
+
+.section-statistics__data4 p {
+    font-size: 2.2em;
+    font-weight: bold;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="main-header">
+        <input type="checkbox" id="menu">
+        <div class="search-bar">
+            <a 
+                class="search-bar__logo-container" 
+                style="background-image: url('img/logo/logo-connecticus.png');"
+                href="index.html"
+            >
+            </a>
+            <div class="search-bar__carrito-container">
+                &#xf07a
+            </div>
+            <form class="search-bar__form-container">
+                <label class="search-bar__form-label" for="busqueda"></label>
+                <input class="search-bar__form-submit" type="submit" value="&#xf002">
+                <input class="search-bar__form-search" id="busqueda" type="search" placeholder="Buscar productos, marcas y más...">
+            </form>
+            <div class="search-bar__contact-container">
+                <div class="search-bar__contact-icon">
+                    &#xf590
+                </div>
+                <div class="search-bar__contact-text">
+                    (011) 1234-5678
+                    mymail@mailservice.com
+                </div>
+            </div>
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__icon1">&#xf0c9</span>
+                    <span class="menu-toggle__icon2">&#xf00d</span>
+                </label>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <div class="nav-bar__espacio-container"></div>
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html"><span class="nav-bar__nav-link-icon">&#xf015</span> Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html"><span class="nav-bar__nav-link-icon">&#xf093</span> Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html"><span class="nav-bar__nav-link-icon">&#xf2b9</span> Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html"><span class="nav-bar__nav-link-icon">&#xf0c0</span> Nosotros</a>
+                </li>
+            </ul>
+            <ul class="nav-bar__nav-social">
+                <li class="nav-bar__nav-social-item" id="nav-social-item-hearder">Síguenos</li>
+                <li class="nav-bar__nav-social-item">
+                    <a href="https://web.whatsapp.com/send?phone=011-1234-5678" target="_blank" class="nav-social-icon"><i class="fab fa-whatsapp"></i></a>
+                </li>
+                <li class="nav-bar__nav-social-item">
+                    <a href="https://facebook.com/" target="_blank" class="nav-social-icon"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="nav-bar__nav-social-item">
+                    <a href="http://instagram.com/" target="_blank" class="nav-social-icon"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-bar__nav-social-item">
+                    <a href="http://twitter.com/" target="_blank" class="nav-social-icon"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+            <div class="nav-bar__carrito-container">
+                &#xf07a
+            </div>
+        </nav>
+    </header>
+    <main class="main-body">
+        <section class="upload-products">
+            <header class="upload-products__header">
+                <h1>Alta de productos</h1>
+            </header>
+            <article class="upload-products__article">
+                <form action="alta.php" class="upload-products__form">
+                    <div class="row-form">
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" name="nombre" required  minlength="3" maxlength="20">
+                    </div>
+                    <div class="row-form">
+                        <label for="precio">Precio:</label>
+                        <input type="number" id="precio" name="precio" value="0" step=".5" required min="0">
+                    </div>
+                    <div class="row-form">
+                        <label for="stock">Stock:</label>
+                        <input type="number" id="stock" name="stock" required max="1000" step="5">
+                    </div>
+                    <div class="row-form">
+                        <label for="marca">Marca:</label>
+                        <select id="marca" name="marca" required>
+                            <option value="">Seleccionar</option>
+                            <option value="1">Bose</option>
+                            <option value="2">Beats</option>
+                            <option value="3">Apple</option>
+                            <option value="4">LG</option>
+                            <option value="5">Microsoft</option>
+                            <option value="5">Philips</option>
+                            <option value="6">Samsung</option>
+                            <option value="7">Sanyo</option>
+                        </select>
+                    </div>
+                    <div class="row-form">
+                        <label for="categoria">Categoría:</label>
+                        <select id="categoria" name="categoria">
+                            <option value="">Seleccionar</option>
+                            <optgroup label="Celulares y Tablets">
+                                <option value="01">Smartphones</option>
+                                <option value="02">Tablets y Accesorios</option>
+                                <option value="03">Celulares</option>
+                                <option value="04">Accesorios para Celulares</option>
+                            </optgroup>
+                            <optgroup label="Computadoras">
+                                <option value="05">PCs</option>
+                                <option value="06">Laptos</option>
+                                <option value="07">Componentes de PC</option>
+                                <option value="08">Impresión</option>
+                            </optgroup>
+                            <optgroup label="Deporte y recreación">
+                                <option value="09">-</option>
+                            </optgroup>
+                            <optgroup label="Camaras y Drones">
+                                <option value="09">Cámaras</option>
+                                <option value="010">Accesorios para Cámaras</option>
+                                <option value="011">Drones y Accesorios</option>
+                            </optgroup>
+                            <optgroup label="Videojuegos">
+                                <option value="09">Juegos</option>
+                                <option value="010">Consolas</option>
+                                <option value="011">Joysticks</option>
+                                <option value="012">Accesorios</option>
+                            </optgroup>
+                            <optgroup label="Speakers y Audio">
+                                <option value="013">Audio</option>
+                                <option value="014">Home theaters</option>
+                                <option value="015">Accesorios</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="row-form">
+                        <label for="imagen">Imagen:</label>
+                        <input type="file" id="imagen" name="imagen" accept="image/png, image/gif, image/jpeg" multiple>
+                    </div>
+                    <div class="row-form">
+                        <label for="detalles">Detalles:</label>
+                        <input id="detalles" name="detalles">
+                    </div>
+                    <div class="row-form">
+                        <label for="envio">Envío:</label>
+                        <input id="envio" name="envio">
+                    </div>
+                    <div class="row-form">
+                        <input type="submit" value="Dar de alta" style="cursor: pointer;">
+                        <input type="reset" value="Restablecer" style="cursor: pointer;">
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer class="footer-body">
+        <section class="section-my-brand">
+            <div class="section-my-brand__logo" style="background-image: url(img/logo/logo-connecticus.png);"></div>
+            <div class="section-my-brand__text">
+                <p>Vendemos productos digitales de alta calidad de todo tipo y enviamos a todos los rincones del mundo.</p>
+            </div>
+            <div class="section-my-brand__payments">
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-amex"></i>
+            </div>
+        </section>
+        <section class="section-footer-categories">
+            <ul class="footer-categories">
+                <h3>Categorías</h3>
+                <li class="footer-categories__item"><a href="#"> Celulares y Tablets</a></li>
+                <li class="footer-categories__item"><a href="#">Computadoras</a></li>
+                <li class="footer-categories__item"><a href="#">Deporte y recreación</a></li>
+                <li class="footer-categories__item"><a href="#">Camaras y Drones</a></li>
+                <li class="footer-categories__item"><a href="#">Videojuegos</a></li>
+                <li class="footer-categories__item"><a href="#">Speakers y Audio</a></li>
+            </ul>
+        </section>
+        <section class="section-contact-info">
+            <ul class="contact-info">
+                <h3>Info y Contacto</h3>
+                <li class="contact-info__item">(011) 1234-5678</li>
+                <li class="contact-info__item">email@mailservice.com</li>
+                <li class="contact-info__item">Buenos Aires</li>
+                <li class="contact-info__item">B1650, Argentina</li>
+            </ul>
+        </section>
+        <section class="section-support">
+            <div class="footer-support">
+                <div class="footer-support__icon"><i class="fas fa-headset"></i></div>
+                <div class="footer-support__text">SERVICIO AL CLIENTE <span>Abierto 24/7</span></div>
+                <div class="footer-support__tel">(011) 1234-5678</div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
